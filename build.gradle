@@ -1,0 +1,24 @@
+plugins {
+    id 'java'
+    id 'application'
+    id 'org.openjfx.javafxplugin' version '0.0.8' // como trabajo con la biblioteca.
+}
+
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+}
+
+javafx {
+    version = '11.0.2'
+    modules = ['javafx.cotrols','javafx.fxml']
+}
+
+mainClassName = 'edu.mirek.TestFX' // Se debe cambiar si se cambia el nombre
